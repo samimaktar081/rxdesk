@@ -7,32 +7,82 @@
 
 <br/><br/>
 
-[![Release](https://img.shields.io/badge/Release-v2.1.5-00E676?style=for-the-badge&logo=github&logoColor=black)](https://morningstarweb.space)
-[![Platform](https://img.shields.io/badge/Platform-Windows_10_|_11-00B0FF?style=for-the-badge&logo=windows&logoColor=white)](https://morningstarweb.space)
+[![Release](https://img.shields.io/badge/Release-v2.1.5_Stable-00E676?style=for-the-badge&logo=github&logoColor=black)](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases/latest)
+[![14-Day Free Trial](https://img.shields.io/badge/Evaluation-14--Day_Free_Trial-FFB300?style=for-the-badge&logo=target&logoColor=black)](#free-trial)
+[![Releases Hub](https://img.shields.io/badge/Release_Hub-rxdesk24x7%2Fdesktop--releases-7C4DFF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases)
+<br/>
+[![Platform](https://img.shields.io/badge/Platform-Windows_10_|_11-00B0FF?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases/latest)
 [![Core](https://img.shields.io/badge/Core-Rust_+_Tauri_v2-FF6D00?style=for-the-badge&logo=rust&logoColor=white)](https://tauri.app)
-<br/>
 [![Storage](https://img.shields.io/badge/Storage-SQLite_WAL_Mode-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![Security](https://img.shields.io/badge/Security-Ed25519_Bound-7C4DFF?style=for-the-badge&logo=shield&logoColor=white)](#hardware-licensing)
-[![Quality Gate](https://img.shields.io/badge/Quality_Gate-29%2F29_PASS-00E676?style=for-the-badge&logo=githubactions&logoColor=white)](#release-report)
-[![Tests](https://img.shields.io/badge/Tests-48%2F48_Passing-0284C7?style=for-the-badge&logo=vitest&logoColor=white)](#release-report)
+[![Quality Gate](https://img.shields.io/badge/Quality_Gate-29%2F29_PASS-00E676?style=for-the-badge&logo=shield&logoColor=white)](#release-report)
 
 <br/>
 
-**RxDesk** is an enterprise-grade, offline-first medical prescription, electronic health record (EHR) timeline, and multi-terminal clinic automation platform engineered for doctors, polyclinics, and dispensaries. Built natively on **Tauri v2**, **Rust**, **React 19**, and **SQLite (WAL Mode)**, RxDesk unifies an embedded **Axum 0.8 HTTPS LAN server** with **mDNS zeroconf discovery**, a sub-20ms pre-warming printing engine, and hardware-bound cryptographic security.
+**RxDesk** is an enterprise-grade, offline-first medical prescription, electronic health record (EHR) timeline, and multi-terminal clinic automation platform engineered for doctors, polyclinics, and dispensaries. Built natively on **Tauri v2**, **Rust**, **React 19**, and **SQLite (WAL Mode)**, RxDesk unifies an embedded **Axum 0.8 HTTPS LAN server** with **mDNS zeroconf discovery**, a sub-20ms pre-warming printing engine, an instant **14-Day Free Evaluation** mode, and an automated continuous delivery release hub.
 
 <br/>
 
 <p align="center">
+  <a href="#free-trial"><b>🎁 14-Day Free Trial</b></a> &nbsp;•&nbsp;
   <a href="#release-report"><b>📋 Release Report</b></a> &nbsp;•&nbsp;
+  <a href="#releases-hub"><b>📦 Releases Hub</b></a> &nbsp;•&nbsp;
   <a href="#architecture"><b>🏛️ Architecture</b></a> &nbsp;•&nbsp;
   <a href="#doctor-suite"><b>🩺 Doctor Suite</b></a> &nbsp;•&nbsp;
-  <a href="#compounder-suite"><b>🏥 Reception / LAN</b></a> &nbsp;•&nbsp;
   <a href="#print-engine"><b>🖨️ Print Engine</b></a> &nbsp;•&nbsp;
   <a href="#hardware-licensing"><b>🛡️ Security</b></a> &nbsp;•&nbsp;
   <a href="https://morningstarweb.space"><b>🌐 MorningStar Web</b></a>
 </p>
 
 </div>
+
+---
+
+<a id="free-trial"></a>
+## 🎁 14-Day Free Evaluation (Instant Onboarding)
+
+RxDesk offers an immediate, fully functional **14-Day Free Evaluation** out of the box, allowing practitioners to experience the entire clinical ecosystem with zero upfront payment or credit card requirement:
+
+```
+[Doctor Installs RxDesk] ──> [Click "Launch 14-Day Free Evaluation"] ──> [Full Clinical Suite Unlocked]
+                                                                                   │
+                                                         ┌─────────────────────────┴────────────────────────┐
+                                                         ▼                                                  ▼
+                                            [Complete Prescription & EHR]                      [LAN Compounder Sync & Print]
+                                            (Unlimited Prescriptions & Cards)                  (Sub-20ms Spooler & SQLite WAL)
+```
+
+### ✨ What is Included in the 14-Day Free Trial:
+- 🚀 **Zero Friction Start:** No license key or credit card needed. Doctors can launch the application and click **"Launch 14-Day Free Evaluation"** to start prescribing immediately.
+- 🩺 **Full Medical Suite Access:** Unrestricted multi-column prescription generator, adaptive AI frequency suggestions, EHR visit archives, and diagnostic report attachments.
+- 🖨️ **Unrestricted Printing:** Complete access to the pre-warming instant print engine for both A4/A5 laser prescriptions and 58mm/80mm thermal token slips.
+- 🏥 **Multi-Terminal LAN Sync:** Run the reception terminal on tablets or compounder laptops over local Wi-Fi via mDNS auto-discovery.
+- 🛡️ **Seamless Permanent Upgrade:** When the 14-day evaluation concludes, all local patient data and prescriptions remain 100% safe inside the local SQLite database. Entering an Ed25519 activation key unlocks permanent operation with zero data re-entry.
+
+---
+
+<a id="releases-hub"></a>
+## 📦 Official Production Releases Hub & Automated Updates
+
+All production releases, compiled NSIS Windows installers, and cryptographically signed update manifests are hosted on the dedicated **RxDesk Releases Hub**:
+
+👉 **Official Releases Repository:** [https://github.com/rxdesk24x7/rxdesk-desktop-releases](https://github.com/rxdesk24x7/rxdesk-desktop-releases)  
+👉 **Latest Release & Changelog:** [https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases)
+
+### 📥 Verified Download Links (v2.1.5 Stable):
+- 🩺 **Doctor Suite Setup:** [RxDesk_2.1.5_x64-setup.exe](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases/download/v2.1.5/RxDesk_2.1.5_x64-setup.exe) *(274 MB — Offline NSIS Installer)*
+- 🏥 **Compounder / Reception Setup:** [RxDesk_Compounder_2.1.5_x64-setup.exe](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases/download/v2.1.5/RxDesk_Compounder_2.1.5_x64-setup.exe) *(266 MB — Offline NSIS Installer)*
+- 🔄 **Doctor Updater Binary:** [RxDesk_2.1.5_x64-update.exe](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases/download/v2.1.5/RxDesk_2.1.5_x64-update.exe) *(Minisign Signed)*
+- 📋 **Live Update Manifest:** [latest.json](https://github.com/rxdesk24x7/rxdesk-desktop-releases/releases/latest/download/latest.json)
+
+### 🔄 Automated Continuous Release Pipeline:
+Every time an update is rolled out via `node scripts/one-click-release.js --publish`, the automated release engine:
+1. **Validates Signing Key:** Verifies the Minisign asymmetric release key before modifying any project state.
+2. **Executes Quality Fortress:** Runs the mandatory 29-layer audit gate (TypeScript, ESLint, 48 Rust unit tests, build hygiene).
+3. **Compiles NSIS Installers:** Builds standalone offline installers containing WebView2 bootstrapper.
+4. **Signs Update Packages:** Generates `.sig` digital signatures matching the public key embedded in `tauri.conf.json`.
+5. **Generates Manifests:** Emits `latest.json` and `compounder-latest.json` with release notes and SHA checksums.
+6. **Publishes to Release Hub:** Directly dispatches the tag and assets to `rxdesk24x7/rxdesk-desktop-releases` using `gh release create`.
+7. **Broadcasts to Live Clients:** Active desktop instances silently detect the update from the release endpoint and offer passive background patching.
 
 ---
 
@@ -106,7 +156,7 @@ flowchart TD
         A["Doctor UI (React 19 / Tailwind / Lucide)"] --> B["Tauri v2 RPC / IPC Bridge"]
         B --> C["Embedded Axum 0.8 HTTPS Server"]
         B --> D["Win32 Print Spooler (Pre-Warmed Engine)"]
-        B --> E["Ed25519 Hardware License Verifier"]
+        B --> E["Ed25519 Hardware License & Trial Gate"]
     end
 
     subgraph CoreEngine ["Embedded Rust Core (crates/)"]
@@ -224,6 +274,7 @@ Benchmarked on **Intel Core i7-13700H, 16GB DDR5, NVMe PCIe 4.0, Windows 11 Pro*
 | **Type Safety Pipeline** | Specta (Rust-to-TypeScript auto-bindings), Zod 3.23 |
 | **Printing Subsystem** | Win32 Direct Spooler API, ESC/POS Raw Thermal Driver |
 | **Licensing Fortress** | Ed25519 Digital Signatures, Windows Registry MachineGuid |
+| **Release Delivery** | Minisign Cryptography, GitHub Releases API, NSIS Offline |
 
 </div>
 
@@ -236,6 +287,7 @@ RxDesk is engineered and distributed under the **[MorningStar Web](https://morni
 
 - **Founder & Systems Architect:** [Samim Aktar (@samimaktar081)](https://github.com/samimaktar081)
 - **Official Enterprise Organization:** [MorningStar Web (@morningstarwebd)](https://github.com/morningstarwebd)
+- **Official Releases Repository:** [rxdesk24x7/rxdesk-desktop-releases](https://github.com/rxdesk24x7/rxdesk-desktop-releases)
 - **Official Website:** [https://morningstarweb.space](https://morningstarweb.space)
 - **Enterprise Contact:** `contact@morningstarweb.space`
 

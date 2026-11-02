@@ -36,22 +36,12 @@
         50% {
           transform: scale(1.15) rotate(6deg);
           opacity: 1;
-          filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6));
+          filter: drop-shadow(0 0 8px rgba(13, 148, 136, 0.6));
         }
       }
       .twinkle {
         animation: star-twinkle 4s ease-in-out infinite;
         transform-origin: 746px 86px;
-      }
-
-      /* Live pulse */
-      @keyframes live-pulse {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.4; transform: scale(1.25); }
-      }
-      .pulse {
-        animation: live-pulse 2s ease-in-out infinite;
-        transform-origin: 18px 18px;
       }
     </style>
 
@@ -104,9 +94,9 @@
       <stop offset="0%" stop-color="#F3E8FF" />
       <stop offset="100%" stop-color="#E9D5FF" />
     </linearGradient>
-    <linearGradient id="badge-teal-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#CCFBF1" />
-      <stop offset="100%" stop-color="#99F6E4" />
+    <linearGradient id="badge-amber-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="100%" stop-color="#FDE68A" />
     </linearGradient>
 
     <!-- Checkmark Circle -->
@@ -185,6 +175,10 @@
     <rect x="312" y="68" width="68" height="26" rx="13" fill="#E0F2FE" />
     <text x="346" y="86" font-size="13" font-weight="700" fill="#0284C7" text-anchor="middle">v2.1.5</text>
 
+    <!-- 14-Day Free Trial Pill -->
+    <rect x="390" y="68" width="138" height="26" rx="13" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1" />
+    <text x="459" y="86" font-size="12" font-weight="700" fill="#92400E" text-anchor="middle">14-Day Free Trial</text>
+
     <!-- Subtitle -->
     <text x="162" y="118" font-size="16" font-weight="500" fill="#64748B" letter-spacing="-0.2px">High-Performance Offline-First Medical Prescription &amp; Clinic Management Suite</text>
 
@@ -226,43 +220,42 @@
       <text x="32" y="22" font-size="12" font-weight="700" fill="#9A3412">Core Rust + Tauri v2</text>
     </g>
 
-    <!-- 4. Storage -->
+    <!-- 4. 14-Day Free Trial Badge -->
     <g transform="translate(440, 0)">
-      <rect x="0" y="0" width="144" height="36" rx="18" fill="url(#badge-teal-grad)" stroke="#5EEAD4" stroke-width="1" />
-      <ellipse cx="18" cy="18" rx="6" ry="2.5" fill="none" stroke="#0F766E" stroke-width="1.6" />
-      <path d="M12 18V22C12 23.5 14.5 24.5 18 24.5C21.5 24.5 24 23.5 24 22V18" fill="none" stroke="#0F766E" stroke-width="1.6" />
-      <text x="32" y="22" font-size="12" font-weight="700" fill="#0F766E">SQLite WAL Mode</text>
+      <rect x="0" y="0" width="150" height="36" rx="18" fill="url(#badge-amber-grad)" stroke="#FCD34D" stroke-width="1" />
+      <text x="16" y="22" font-size="13">🎁</text>
+      <text x="34" y="22" font-size="12" font-weight="700" fill="#92400E">14-Day Free Trial</text>
     </g>
 
-    <!-- 5. License -->
-    <g transform="translate(592, 0)">
+    <!-- 5. Security -->
+    <g transform="translate(598, 0)">
       <rect x="0" y="0" width="112" height="36" rx="18" fill="url(#badge-purple-grad)" stroke="#D8B4FE" stroke-width="1" />
       <path d="M16 11L21 13V18C21 21 16 23 16 23C16 23 11 21 11 18V13L16 11Z" fill="#7C3AED" />
       <text x="30" y="22" font-size="12" font-weight="700" fill="#6B21A8">Ed25519 Bound</text>
     </g>
 
     <!-- 6. Quality Gate -->
-    <g transform="translate(712, 0)">
-      <rect x="0" y="0" width="118" height="36" rx="18" fill="url(#badge-green-grad)" stroke="#86EFAC" stroke-width="1" />
+    <g transform="translate(718, 0)">
+      <rect x="0" y="0" width="108" height="36" rx="18" fill="url(#badge-green-grad)" stroke="#86EFAC" stroke-width="1" />
       <circle cx="16" cy="18" r="4.5" fill="#10B981" />
-      <text x="28" y="22" font-size="12" font-weight="700" fill="#065F46">Gate 29/29 Pass</text>
+      <text x="28" y="22" font-size="12" font-weight="700" fill="#065F46">29/29 Pass</text>
     </g>
 
     <!-- 7. Tests -->
-    <g transform="translate(838, 0)">
-      <rect x="0" y="0" width="102" height="36" rx="18" fill="url(#badge-blue-grad)" stroke="#7DD3FC" stroke-width="1" />
+    <g transform="translate(834, 0)">
+      <rect x="0" y="0" width="94" height="36" rx="18" fill="url(#badge-blue-grad)" stroke="#7DD3FC" stroke-width="1" />
       <circle cx="16" cy="18" r="4" fill="#0284C7" />
-      <text x="26" y="22" font-size="12" font-weight="700" fill="#0369A1">48/48 Pass</text>
+      <text x="26" y="22" font-size="12" font-weight="700" fill="#0369A1">48 Tests</text>
     </g>
   </g>
 
   <!-- Summary Description Paragraph -->
   <g transform="translate(52, 214)">
     <text x="0" y="14" font-size="15" font-weight="500" fill="#334155" letter-spacing="-0.1px">
-      <tspan font-weight="700" fill="#0F172A">RxDesk</tspan> is an enterprise-grade, offline-first medical prescription, EHR timeline, and clinic management suite tailored for doctors,
+      <tspan font-weight="700" fill="#0F172A">RxDesk</tspan> includes an instant <tspan font-weight="700" fill="#B45309">14-Day Free Evaluation</tspan> with full clinical features. Built with Tauri v2, SQLite WAL mode,
     </text>
     <text x="0" y="34" font-size="15" font-weight="500" fill="#334155" letter-spacing="-0.1px">
-      polyclinics, and dispensaries. Powered by Tauri v2, SQLite WAL mode, in-process Axum HTTPS server, and instant &lt;20ms pre-warming printing.
+      in-process Axum HTTPS server, zero-config mDNS discovery, and sub-20ms pre-warming printing. Updates published to official release hub.
     </text>
   </g>
 
@@ -281,19 +274,19 @@
     <g transform="translate(22, 60)">
       <!-- Item 1 -->
       <use href="#check-icon" x="0" y="0" />
-      <text x="32" y="15" font-size="13.5" font-weight="600" fill="#1E293B">Rapid prescription &amp; adaptive AI suggestions</text>
+      <text x="32" y="15" font-size="13.5" font-weight="600" fill="#1E293B">14-Day Free Evaluation (Instant Onboarding)</text>
 
       <!-- Item 2 -->
       <use href="#check-icon" x="0" y="28" />
-      <text x="32" y="43" font-size="13.5" font-weight="600" fill="#1E293B">Instant &lt;20ms pre-warming print engine (GDI/ESC-POS)</text>
+      <text x="32" y="43" font-size="13.5" font-weight="600" fill="#1E293B">Rapid prescription &amp; adaptive AI suggestions</text>
 
       <!-- Item 3 -->
       <use href="#check-icon" x="0" y="56" />
-      <text x="32" y="71" font-size="13.5" font-weight="600" fill="#1E293B">Axum 0.8 HTTPS local server with mDNS auto-sync</text>
+      <text x="32" y="71" font-size="13.5" font-weight="600" fill="#1E293B">Instant &lt;20ms pre-warming print engine (GDI/ESC-POS)</text>
 
       <!-- Item 4 -->
       <use href="#check-icon" x="0" y="84" />
-      <text x="32" y="99" font-size="13.5" font-weight="600" fill="#1E293B">Live reception queue &amp; pharmacy inventory (SSE)</text>
+      <text x="32" y="99" font-size="13.5" font-weight="600" fill="#1E293B">Axum 0.8 HTTPS local server with mDNS auto-sync</text>
 
       <!-- Item 5 -->
       <use href="#check-icon" x="0" y="112" />
@@ -358,13 +351,13 @@
 
     <g transform="translate(24, 22)">
       <text x="0" y="13" font-size="16">🚀</text>
-      <text x="26" y="13" font-size="15" font-weight="800" fill="#0F172A">Executive Summary &amp; Production Releasing Report (v2.1.5)</text>
+      <text x="26" y="13" font-size="15" font-weight="800" fill="#0F172A">Official Release Hub &amp; Quality Report (v2.1.5)</text>
       
       <text x="0" y="38" font-size="13.5" font-weight="500" fill="#475569">
-        Cleared 29/29 Quality Gates and 48/48 Rust tests. Features revolutionary &lt;20ms pre-warming printing, multi-page unrolling,
+        Cleared 29/29 Quality Gates with 14-Day Free Evaluation. Every release is automatically signed and published to
       </text>
       <text x="0" y="56" font-size="13.5" font-weight="500" fill="#475569">
-        robust Win32 GDI direct spooling, and zero-latency dual workstation synchronization over mDNS and HTTPS.
+        the official release repository: github.com/rxdesk24x7/rxdesk-desktop-releases/releases.
       </text>
     </g>
   </g>
@@ -378,9 +371,9 @@
 
     <!-- Pill 2 -->
     <g transform="translate(152, 0)">
-      <rect x="0" y="0" width="146" height="34" rx="17" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" />
-      <text x="14" y="21" font-size="13">⚡</text>
-      <text x="36" y="21" font-size="12" font-weight="700" fill="#334155">Axum LAN Sync</text>
+      <rect x="0" y="0" width="146" height="34" rx="17" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1" />
+      <text x="14" y="21" font-size="13">🎁</text>
+      <text x="36" y="21" font-size="12" font-weight="700" fill="#92400E">14-Day Free Trial</text>
     </g>
 
     <!-- Pill 3 -->
@@ -393,8 +386,8 @@
     <!-- Pill 4 -->
     <g transform="translate(460, 0)">
       <rect x="0" y="0" width="148" height="34" rx="17" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" />
-      <text x="14" y="21" font-size="13">🛡️</text>
-      <text x="36" y="21" font-size="12" font-weight="700" fill="#334155">Ed25519 Bound</text>
+      <text x="14" y="21" font-size="13">📦</text>
+      <text x="36" y="21" font-size="12" font-weight="700" fill="#334155">Releases Hub</text>
     </g>
 
     <!-- Pill 5 -->
